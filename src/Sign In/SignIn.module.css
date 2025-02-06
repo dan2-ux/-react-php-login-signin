@@ -1,0 +1,223 @@
+.input{
+    width: 20em;
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+.box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+h1{
+    color: white;
+}
+.smaller{
+    border: 2px solid rgba(255,255,255,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35em;
+    width: 25em;
+    color: transparent;
+    backdrop-filter: blur(10px);
+    transition: backdrop-filter 1s ease-in, backdrop-filter 2s ease-out,
+    border 1s ease-in, border 2s ease-out;
+}
+.smaller:hover{
+    backdrop-filter: blur(20px);
+    border: 2px solid white;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.enter{
+    height: 2.5em;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    outline: none;
+    width: 100%;
+    color: white;
+    border-radius: 40px;
+}
+.enter:hover{
+    transform: scale(1.03);
+}
+input::placeholder{
+    color: white;
+    padding-left: 1em;
+}
+.icon{
+    position: absolute;
+    color: white;
+    transform: translate(1870%, -180%);
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    filter: invert(100%);
+    position: absolute;
+    transform: translate(1700%);
+}
+
+label{
+    cursor: pointer;
+}
+
+input:focus::placeholder{
+    color: transparent
+}
+
+.gender{
+    width: 24em;
+    height: 2.5em;
+}
+
+.date{
+    height: 2.5em;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    outline: none;
+    width: 100%;
+    color: white;
+    border-radius: 40px;
+}
+.date:hover{
+    transform: scale(1.03);
+}
+input[type="radio"]{
+    cursor: pointer;
+}
+
+input[type="radio"]:hover{
+    transform: scale(1.2);
+}
+
+.gen{
+    color: white;
+}
+
+input[type="text"]:focus{
+    text-align: center;
+}
+input[type="password"]:focus{
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nut{
+    height: 4em;
+    width: 8em;
+    background-color: rgb(25, 25, 110);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.7s;
+}
+.nut:hover{
+    background-color: rgb(19, 19, 86);
+}
+.nut:active{
+    transform: translateY(-10%);
+}
+
+.res{
+    position: absolute;
+    color: red;
+    transform: translate(0, 1400%);
+}
+
+@media (max-width: 678px){
+    h1{
+        font-size: 1.3em;
+    }
+    .smaller{
+        border: 2px solid rgba(255,255,255,.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 20em;
+        width: 15em;
+        color: transparent;
+        backdrop-filter: blur(10px);
+        transition: backdrop-filter 1s ease-in, backdrop-filter 2s ease-out,
+        border 1s ease-in, border 2s ease-out;
+    }
+    .form{
+        display:flex;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    .input{
+        width: 13em;
+        padding:0;
+        margin:0;
+        border:0;
+        font-size: 0.3;
+    }
+    .nut{
+        height: 3em;
+        width: 6em;
+        background-color: rgb(25, 25, 110);
+        border-radius: 20px;
+        border: none;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        transition: background-color 0.7s;
+        font-size: 0.7em;
+    }
+    .res{
+        position: absolute;
+        font-size: 0.7em;
+        color: red;
+        transform: translate(0, 2200%);
+    }
+    .a{
+        font-size: 0.5em;
+    }
+    .gen{
+        font-size: 0.5em;
+    }
+    .icon{
+        position: absolute;
+        color: white;
+        width: 0.7em;
+        transform: translate(1700%, -110%);
+    }
+    .date{
+        height: 1em;
+        background: transparent;
+        border: 2px solid rgba(255,255,255, .2);
+        outline: none;
+        width: 100%;
+        color: white;
+        border-radius: 40px;
+    }
+    .enter{
+        height: 1em;
+        background: transparent;
+        border: 2px solid rgba(255,255,255, .2);
+        outline: none;
+        width: 100%;
+        color: white;
+        border-radius: 40px;
+        font-size: 0.5;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator{
+        display: none;
+    }
+}

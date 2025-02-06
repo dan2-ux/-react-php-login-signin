@@ -1,0 +1,6 @@
+body{
+    background: url('./assets/pic.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
